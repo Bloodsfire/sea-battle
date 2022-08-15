@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="game-container">
+    <div class="field">
+      <div
+        class="cell"
+        *ngFor="let cell of cells"
+        [class.cell--fired]="cell.type === 'fired'"
+      ></div>
+    </div>
+    <div class="field"></div>
+  </div>
+</div>
