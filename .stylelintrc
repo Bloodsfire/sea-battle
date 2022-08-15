@@ -1,0 +1,81 @@
+{
+  "plugins": [
+    "stylelint-declaration-use-variable",
+    "stylelint-scss"
+  ],
+  "extends": [
+    "stylelint-config-idiomatic-order"
+  ],
+  "rules": {
+    "color-no-invalid-hex": true,
+    "font-family-no-duplicate-names": true,
+    "font-family-no-missing-generic-family-keyword": true,
+    "function-calc-no-invalid": true,
+    "function-calc-no-unspaced-operator": true,
+    "function-linear-gradient-no-nonstandard-direction": true,
+    "string-no-newline": true,
+    "unit-no-unknown": true,
+    "property-no-unknown": true,
+    "keyframe-declaration-no-important": true,
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-block-no-shorthand-property-overrides": true,
+    "block-no-empty": true,
+    "selector-pseudo-class-no-unknown": true,
+    "selector-pseudo-element-no-unknown": [true, {
+      "ignorePseudoElements": ["ng-deep"]
+    }],
+    "selector-type-no-unknown": true,
+    "media-feature-name-no-unknown": true,
+    "at-rule-no-unknown": null,
+    "comment-no-empty": true,
+    "no-descending-specificity": true,
+    "no-duplicate-at-import-rules": true,
+    "no-duplicate-selectors": true,
+    "no-extra-semicolons": true,
+    "no-invalid-double-slash-comments": true,
+    "alpha-value-notation": "number",
+    "hue-degree-notation": "number",
+    "color-function-notation": "modern",
+    "color-named": "never",
+    "length-zero-no-unit": true,
+    "font-weight-notation": "numeric",
+    "value-no-vendor-prefix": true,
+    "custom-property-pattern": "[prlw,i]-.+",
+    "property-no-vendor-prefix": true,
+    "declaration-block-no-redundant-longhand-properties": true,
+    "declaration-no-important": true,
+    "selector-max-attribute": null,
+    "selector-max-class": null,
+    "selector-max-id": null,
+    "selector-max-specificity": null,
+    "selector-no-qualifying-type": true,
+    "selector-no-vendor-prefix": true,
+    "media-feature-name-no-vendor-prefix": true,
+    "at-rule-no-vendor-prefix": true,
+    "max-nesting-depth": 1,
+    "color-hex-length": "long",
+    "font-family-name-quotes": "always-unless-keyword",
+    "number-leading-zero": "always",
+    "number-no-trailing-zeros": true,
+    "rule-empty-line-before": [
+      "always",
+      {
+        "ignore": "first-nested"
+      }
+    ],
+    "sh-waqar/declaration-use-variable": [
+      [
+        "/color/",
+        "/font/",
+        {
+          "ignoreValues": [
+            "transparent",
+            "currentColor",
+            "inherit"
+          ]
+        }
+      ]
+    ]
+  },
+  "scss/at-rule-no-unknown": true
+}
